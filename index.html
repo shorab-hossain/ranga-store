@@ -15,21 +15,62 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
+  <!-- fontAwesome-link -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   <style>
+      .card{
+          margin:7px;
+          background-color: rgb(159, 201, 214);
+          border-radius: 30px;
+          color: black;
+        }
+        .search-field {
+            border: none;
+            border-radius: 10px 0px 3px 9px;
+            padding: 15px;
+            outline: none;
+        }
+        .search-box {
+            border: 1px solid rgb(3, 118, 211);
+            width: 350px;
+            border-radius: 10px;
+            margin: auto;
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+        #input-field {
+             width: 271px;
+           }
+        .btn-primary{
+                color: #fff;
+                background-color: #337ab7;
+                border-color: #2e6da4;
+                padding: 15px;
+                width: 74px;
+                margin-left: -1px;
+                margin-left: none;
+            }
+       button.btn.btn-primary.text-center.p-3 {
+             padding: 13px 9px;
+            }
   </style>
+
 </head>
 
-<!-- <body>
-  <div class="row col-lg-10">
-    <div class="input-group mb-3">
-      <button class="btn btn-outline-secondary" type="button" id="button-addon1">Button</button>
-      <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
-    </div>
-  </div> -->
-  <header>      
-</header>
+<body style="background-color: #ffeded;">-
+  <header>  
+    <h1 class="text-center fw-lg-bold text-primary">E-FASTION HOUSE</h1>
+  </header>
   <main class="main">
-
+    <div class="search-field">
+      <div class="search-box">
+        <input id="input-field" class="search-field " type="text" />
+        <button type="button" class="btn btn-primary search-button"  aria-pressed="false"
+          autocomplete="off" id="search-btn" onclick="loadProducts()">
+          Search
+        </button>
+      </div>
+    </div>
     <div class="row">
       <div class="col-md-9 col-lg-9 col-sm-7">
         <div id="all-products" class="">
@@ -80,7 +121,7 @@
             </tbody>
           </table>
           <div class="parces text-center">
-            <button class="btn btn-primary text-center">Buy Now</button>
+            <button  class="btn btn-primary text-center p-3">Buy Now</button>
           </div>
         </div>
       </div>
